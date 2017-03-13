@@ -1,29 +1,16 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/admin/my_data/coder_school/CoderTicket/spec/models/event_spec.rb": [
+      "/Users/admin/my_data/coder_school/CoderTicket/spec/models/user_spec.rb": [
         1,
         null,
         1,
         1,
         1,
-        1,
         null,
         null,
         1,
         1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
         null,
         null,
         null,
@@ -653,7 +640,7 @@
       "/Users/admin/my_data/coder_school/CoderTicket/app/helpers/events_helper.rb": [
         1,
         1,
-        1,
+        0,
         null,
         null
       ],
@@ -661,26 +648,9 @@
         1,
         null
       ],
-      "/Users/admin/my_data/coder_school/CoderTicket/app/models/event.rb": [
-        1,
-        1,
-        1,
+      "/Users/admin/my_data/coder_school/CoderTicket/app/models/user.rb": [
         1,
         null,
-        1,
-        1,
-        null,
-        1,
-        4,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/Users/admin/my_data/coder_school/CoderTicket/spec/requests/events_spec.rb": [
         1,
         null,
         1,
@@ -688,53 +658,18 @@
         1,
         1,
         1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        1,
         1,
         1,
         null,
-        null,
-        null,
-        null
-      ],
-      "/Users/admin/my_data/coder_school/CoderTicket/app/models/venue.rb": [
-        1,
-        1,
         1,
         null
       ],
-      "/Users/admin/my_data/coder_school/CoderTicket/app/models/category.rb": [
+      "/Users/admin/my_data/coder_school/CoderTicket/app/models/application_record.rb": [
         1,
-        1,
-        1,
-        null
-      ],
-      "/Users/admin/my_data/coder_school/CoderTicket/app/controllers/events_controller.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/Users/admin/my_data/coder_school/CoderTicket/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
         1,
         null
       ]
     },
-    "timestamp": 1489362567
+    "timestamp": 1489365334
   }
 }
