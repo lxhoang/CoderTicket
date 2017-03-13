@@ -15,6 +15,8 @@
         null,
         null,
         null,
+        null,
+        null,
         null
       ],
       "/Users/admin/my_data/coder_school/CoderTicket/spec/rails_helper.rb": [
@@ -577,6 +579,10 @@
         null,
         1,
         null,
+        1,
+        null,
+        1,
+        null,
         null,
         null,
         null,
@@ -648,6 +654,10 @@
         1,
         null
       ],
+      "/Users/admin/my_data/coder_school/CoderTicket/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
       "/Users/admin/my_data/coder_school/CoderTicket/app/models/user.rb": [
         1,
         null,
@@ -670,6 +680,6 @@
         null
       ]
     },
-    "timestamp": 1489365334
+    "timestamp": 1489384671
   }
 }
