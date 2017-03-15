@@ -1,22 +1,50 @@
-<div class="row p1">
+<!-- => TicketType(id: integer, event_id: integer, price: integer, name: string, max_quantity: integer, created_at: datetime, updated_at: datetime) -->
+<br>
+<br>
+<br>
+<div class="row">
+  
+  <div class="col-lg-3" >  </div>
   <div class="col-lg-6">
-    <%= form_for (@ticket), url: event_tickets_path do |f| %>
-    <div class="form-group">
-      <%= f.label :ticket_types %>
-      <%= f.text_field :name, class:"form-control" %>
-    </div>
-    <div class="form-group">
-      <%= f.label :price %>
-      <%= f.text_field :price, class:"form-control" %>
-    </div>
-    <div class="form-group">
-      <%= f.label :max_quantity %>
-      <%= f.text_field :max_quantity, class:"form-control" %>
-    </div>
-    <div class="form-group row">
-      <%= f.submit "New", class:"btn btn-success" %> |
-      <%= link_to "Back",root_path, class:"btn btn-warning" %>
-    </div>
+    
+    <div class="container">
+  <h2>Ticket type for "<%= @event.name %>"</h2>
+  <%= form_for @ticket, url: event_tickets_path  do |f| %>
+      <div class="form-group row">
+      <label for="name" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+        <%= f.text_field :name, class: 'form_control' %>
+      </div>
+      </div>
+
+      <div class="form-group row">
+      <label for="price" class="col-sm-2 col-form-label">Price</label>
+      <div class="col-sm-10">
+        <%= f.text_field :price, class: 'form_control' %>
+      </div>
+      </div>
+
+       <div class="form-group row">
+      <label for="max_quantity" class="col-sm-2 col-form-label">Max Quantity</label>
+      <div class="col-sm-10">
+        <%= f.text_field :max_quantity, class: 'form_control' %>
+      </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="offset-sm-2 col-sm-10">
+          <%= f.submit "Create Ticket Type",class: "btn btn-primary" %>
+        </div>
+      </div>
+       
     <% end %>
-  </div>    
+
+</div>
+
+  </div>
+    
+
+
+  
+
 </div>

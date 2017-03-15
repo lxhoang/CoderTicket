@@ -7,6 +7,7 @@
       </p>
       <h1> Hot Events </h1>
       <div class="ticket-list">
+
         <% @event.ticket_types.each do |ticket_type| %>
           <div class="row">
             <div class="col-md-6">
@@ -20,6 +21,8 @@
           <div class="clearfix"></div>
         <% end %>
 
+
+
         <% if @event.publish_at %>
           <%= link_to event_tickets_path (@event) do %>
           <button class='btn btn-lg btn-block btn-danger'> BOOK NOW </button>
@@ -28,9 +31,9 @@
           <%= link_to publish_event_path do %>
           <button class='btn btn-lg btn-block btn-primary'> PUBLISH </button>
           <% end %>
-          
         <% end %>
-
+<br>
+        <%= link_to "New Ticket Type", new_event_ticket_path(@event) , class: 'btn btn-primary'%>
         
       </div>
     </div>
