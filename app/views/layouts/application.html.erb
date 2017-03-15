@@ -25,6 +25,10 @@
         
         <%= link_to "Log out", logout_path, method: 'delete', class: "nav-link" %>
       </li>
+      <li class="nav-item">
+        <%= flash_messages %>
+
+      </li>
       <% end %>
     </ul>
   </nav>  

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'sessions/new'
 
   root 'events#index'
@@ -6,6 +7,8 @@ Rails.application.routes.draw do
   resources :events do
     resources :tickets
   end
+
+  resources :orders
 
   get 'upcoming' => "events#index"
 
