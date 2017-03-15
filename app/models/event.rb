@@ -8,11 +8,15 @@ class Event < ActiveRecord::Base
   validates_uniqueness_of :name, uniqueness: {scope: [:venue, :starts_at]}
 
   def self.upcoming
-    where("ends_at > ?", Time.now)
+    published.where("ends_at > ? or starts_at > ?", Time.now, Time.now)
   end
 
   def self.published
-  	where.not(published_at: nil)
+  	where.not(publish_at: nil)
+  end
+
+  def self.my_events(user_id)
+    where(user_id: user_id)
   end
 
 end

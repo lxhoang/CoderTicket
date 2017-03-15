@@ -19,9 +19,19 @@
           </div>
           <div class="clearfix"></div>
         <% end %>
-        <%= link_to event_tickets_path (@event) do %>
+
+        <% if @event.publish_at %>
+          <%= link_to event_tickets_path (@event) do %>
           <button class='btn btn-lg btn-block btn-danger'> BOOK NOW </button>
+          <% end %>
+        <% else %>
+          <%= link_to publish_event_path do %>
+          <button class='btn btn-lg btn-block btn-primary'> PUBLISH </button>
+          <% end %>
+          
         <% end %>
+
+        
       </div>
     </div>
     <div class="col-md-9 event-content">
