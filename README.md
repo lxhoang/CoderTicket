@@ -3,7 +3,7 @@
 **Name of your app** is a Ruby on Rails application that allows users to create and buy tickets to cool events.
 
 - Submitted by: **Le Xuan Hoang**
-- Time spent: **14** hours
+- Time spent: **24** hours
 - URL: **Insert your Heroku URL here**
 - SimpleCov Test Coverage: [coverage/index.html](coverage/index.html)
 
@@ -66,6 +66,10 @@ The person with best test coverage will win a small present from the instructor 
 * [ ] Ticket types have an optional "minimum" purchase quantity. ([Example Screenshot](http://i.imgur.com/DOYtAR0.png))
 * [ ] Events are automatically labeled as "Hot". "Hot" events should have a red border or some sort of visual flourish. The event title should also be prefixed with "**HOT:**".
 * [ ] Instead of showing all of the events on the main page, an "admin" user can dictate the events that show up on the main page.
+
+
+![Video Walkthrough](https://github.com/lxhoang/CoderTicket/blob/master/hw3.gif)
+
 
 ## Notes
 
